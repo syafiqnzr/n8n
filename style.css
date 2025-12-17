@@ -242,7 +242,7 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: var(--spacing-lg);
@@ -257,7 +257,7 @@ body {
 }
 
 .hero-description {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: var(--color-text-secondary);
     margin-bottom: var(--spacing-xl);
     line-height: 1.7;
@@ -1523,7 +1523,6 @@ body {
 .pricing-card.featured {
     border: 2px solid var(--color-accent);
     transform: scale(1.05);
-    background: linear-gradient(135deg, rgba(238, 79, 39, 0.05), rgba(255, 155, 38, 0.05));
     box-shadow: 0 10px 40px rgba(238, 79, 39, 0.2);
 }
 
