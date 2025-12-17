@@ -216,7 +216,9 @@ body {
     display: flex;
     align-items: center;
     padding-top: 100px;
+    padding-bottom: var(--spacing-4xl);
     overflow: hidden;
+    margin-bottom: var(--spacing-3xl);
 }
 
 .hero-bg-gradient {
@@ -1476,6 +1478,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--spacing-2xl);
     margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-lg);
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -1490,7 +1493,8 @@ body {
     text-align: center;
     transition: var(--transition-base);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    margin-top: var(--spacing-lg);
 }
 
 .pricing-card::after {
@@ -1502,6 +1506,8 @@ body {
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(238, 79, 39, 0.1), transparent);
     transition: var(--transition-slow);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
 }
 
 .pricing-card:hover::after {
@@ -1538,6 +1544,10 @@ body {
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(238, 79, 39, 0.5);
+    z-index: 10;
+    white-space: nowrap;
 }
 
 .pricing-plan {
