@@ -5,54 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>n8n.com.my | Automasi Aliran Kerja Malaysia</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="main-header">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">n8n<span class="logo-my">.my</span></a>
-            <nav class="main-nav">
-                <a href="#features">Ciri-ciri</a>
-                <a href="#pricing">Harga</a>
-                <a href="#" class="btn btn-secondary">Log Masuk</a>
-            </nav>
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <span class="logo-text">n8n</span><span class="logo-my">.my</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#features" class="nav-link">Ciri-ciri</a>
+                    <a href="#integrations" class="nav-link">Integrasi</a>
+                    <a href="#pricing" class="nav-link">Harga</a>
+                    <a href="#" class="btn btn-primary">Mula Percuma</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <section class="hero-section">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-gradient"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Automasi Aliran Kerja Anda dengan <span class="highlight">Visual</span>.</h1>
-                <p>Platform automasi aliran kerja no-code/low-code yang fleksibel untuk perniagaan di Malaysia.</p>
-                <a href="#" class="btn btn-primary cta-button">Mula Secara Percuma</a>
-            </div>
-            <div class="hero-image">
-                <div class="node-visualization"></div>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Automasi Aliran Kerja Anda dengan
+                        <span class="gradient-text">Visual</span>
+                    </h1>
+                    <p class="hero-description">
+                        Platform automasi aliran kerja no-code/low-code yang fleksibel untuk perniagaan di Malaysia.
+                        Hubungkan aplikasi anda dan automatikkan proses kerja tanpa menulis kod.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#" class="btn btn-large btn-primary">
+                            Mula Secara Percuma
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#features" class="btn btn-large btn-secondary">Ketahui Lebih Lanjut</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">400+</div>
+                            <div class="stat-label">Integrasi</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Open Source</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Kemungkinan</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="workflow-canvas">
+                        <div class="workflow-node node-1">
+                            <div class="node-icon">📧</div>
+                            <div class="node-label">Gmail</div>
+                        </div>
+                        <div class="workflow-node node-2">
+                            <div class="node-icon">⚡</div>
+                            <div class="node-label">n8n</div>
+                        </div>
+                        <div class="workflow-node node-3">
+                            <div class="node-icon">📊</div>
+                            <div class="node-label">Sheets</div>
+                        </div>
+                        <svg class="workflow-connections" viewBox="0 0 400 300">
+                            <path class="connection-line line-1" d="M 100 150 Q 150 150 200 150" stroke-dasharray="5,5"/>
+                            <path class="connection-line line-2" d="M 200 150 Q 250 150 300 150" stroke-dasharray="5,5"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Features Section -->
     <section id="features" class="features-section">
         <div class="container">
-            <h2>Integrasi & Kuasa Penuh</h2>
-            <div class="feature-grid">
+            <div class="section-header">
+                <h2 class="section-title">Integrasi & Kuasa Penuh</h2>
+                <p class="section-subtitle">Semua yang anda perlukan untuk mengautomatikkan perniagaan anda</p>
+            </div>
+            <div class="features-grid">
                 <div class="feature-card">
-                    <h3>Sambungan Tempatan</h3>
-                    <p>Integrasi dengan perkhidmatan dan sistem tempatan di Malaysia untuk automasi yang relevan.</p>
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Sambungan Tempatan</h3>
+                    <p class="feature-description">Integrasi dengan perkhidmatan dan sistem tempatan di Malaysia untuk automasi yang relevan dengan perniagaan anda.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Visual Flow Builder</h3>
-                    <p>Bina aliran kerja yang kompleks dengan mudah menggunakan antaramuka seret-dan-lepas berasaskan nod.</p>
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 9H15M9 15H15M12 9V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Visual Flow Builder</h3>
+                    <p class="feature-description">Bina aliran kerja yang kompleks dengan mudah menggunakan antaramuka seret-dan-lepas berasaskan nod yang intuitif.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Data Di Tangan Anda</h3>
-                    <p>Pilihan untuk hosted sendiri (self-hosted) untuk kawalan data dan keselamatan yang maksimum.</p>
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Data Di Tangan Anda</h3>
+                    <p class="feature-description">Pilihan untuk hosted sendiri (self-hosted) untuk kawalan data dan keselamatan yang maksimum bagi organisasi anda.</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Integrations Section -->
+    <section id="integrations" class="integrations-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hubungkan Semua Aplikasi Anda</h2>
+                <p class="section-subtitle">400+ integrasi sedia ada untuk memudahkan automasi anda</p>
+            </div>
+            <div class="integrations-showcase">
+                <div class="integration-logo">Gmail</div>
+                <div class="integration-logo">Slack</div>
+                <div class="integration-logo">Notion</div>
+                <div class="integration-logo">Airtable</div>
+                <div class="integration-logo">Telegram</div>
+                <div class="integration-logo">MySQL</div>
+                <div class="integration-logo">Discord</div>
+                <div class="integration-logo">Shopify</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Mula Automatikkan Hari Ini</h2>
+                <p class="cta-description">Sertai ribuan perniagaan yang telah mengautomatikkan aliran kerja mereka</p>
+                <a href="#" class="btn btn-large btn-white">Mula Secara Percuma</a>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
