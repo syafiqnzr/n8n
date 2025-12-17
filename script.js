@@ -159,6 +159,30 @@ function animateCounter(element, target, suffix = '') {
     }, 30);
 }
 
+// ===== FAQ TOGGLE =====
+function toggleFAQ(element) {
+    const faqItem = element.parentElement;
+    const answer = faqItem.querySelector('.faq-answer');
+    const isOpen = answer.classList.contains('open');
+
+    // Close all other FAQs
+    document.querySelectorAll('.faq-answer').forEach(ans => {
+        ans.classList.remove('open');
+    });
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+    });
+
+    // Toggle current FAQ
+    if (!isOpen) {
+        answer.classList.add('open');
+        faqItem.classList.add('active');
+    }
+}
+
+// Make toggleFAQ available globally
+window.toggleFAQ = toggleFAQ;
+
 // ===== CONSOLE MESSAGE =====
-console.log('%c🚀 n8n.com.my - Automasi Aliran Kerja Malaysia', 'color: #ee4f27; font-size: 16px; font-weight: bold;');
-console.log('%cBuilt with ❤️ for Malaysian businesses', 'color: #ff9b26; font-size: 12px;');
+console.log('%c🚀 Latihan Automasi AI Agentic - n8n.com.my', 'color: #ee4f27; font-size: 16px; font-weight: bold;');
+console.log('%cKuasai automasi kerja dengan AI dalam 2 hari', 'color: #ff9b26; font-size: 12px;');
